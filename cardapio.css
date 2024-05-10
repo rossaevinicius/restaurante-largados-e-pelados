@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+
+
+#cardapio {
+    padding: 20px;
+    text-align: center;
+    flex: 1; 
+}
+
+h2, h3, h4 {
+    color: #333;
+    text-align: center; 
+}
+
+.pratos, .bebidas, .combos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.prato, .bebida, .combo {
+    width: calc(33.33% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.prato:hover, .bebida:hover, .combo:hover {
+    transform: scale(1.05);
+}
+
+.prato img, .bebida img, .combo img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.prato h4, .bebida h4, .combo h4 {
+    margin-top: 10px;
+}
+
+.prato p, .bebida p, .combo p {
+    margin: 5px 0;
+}
+
+
+footer {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
